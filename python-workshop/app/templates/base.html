@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" class="theme-night">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}Snake Bookshop{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  </head>
+  <body>
+    <header class="nav-bar">
+      <div class="container nav-inner">
+        <div class="nav-left">
+          <a href="{{ url_for('index') }}" class="nav-title">
+            <span class="nav-logo">
+              <img src="{{ url_for('static', filename='img/python-logo.png') }}" alt="Snake Bookshop logo" />
+            </span>
+            <span class="nav-name">Snake Bookshop</span>
+          </a>
+        </div>
+        <div class="nav-right">
+          <div class="nav-actions">
+            <a href="/" class="pixel-button">HOME</a>
+            <a href="{{ url_for('books') }}" class="pixel-button">Books Page</a>
+            <a href="{{ url_for('books_payload') }}" class="pixel-button">Books API</a>
+            <a href="{{ url_for('healthcheck') }}" class="pixel-button">Health API</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      {% block content %}{% endblock %}
+    </main>
+    <footer class="footer">
+      <span>✶</span> Created by <a href="https://github.com/dotdc">David Calvert</a> for your Cursor adventures <span>✶</span><br><br>
+      &copy; {{ 2025 }} Snake Bookshop 
+    </footer>
+    <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Snake Bookshop - Books{% endblock %}
+{% block content %}
+  <section class="pixel-panel">
+    <header class="snake-banner" style="margin-bottom: 2rem;">
+      <div class="banner-copy">
+        <h1>Books</h1>
+        <p>Every volume ships with a matching operating cursor emblem. The search bar is currently ornamental—bring it to life when you tackle the enhancement quest.</p>
+      </div>
+    </header>
+    <div class="search-panel">
+      <input type="search" placeholder="Type to filter (coming soon)" disabled />
+      <button class="pixel-button" type="button" disabled>Search</button>
+    </div>
+    <div class="book-grid">
+      {% for glyph in books %}
+        <article
+          class="book-card"
+          style="border-color: {{ glyph.accent }}; box-shadow: 6px 6px 0 0 {{ glyph.accent_dark }};"
+        >
+          <img src="{{ url_for('static', filename=glyph.icon) }}" alt="Cursor glyph for {{ glyph.title }}" />
+          <h3>{{ glyph.title }}</h3>
+          <p class="book-meta">{{ glyph.collection }} · {{ format_rarity(glyph.rarity) }}</p>
+          <p class="book-blurb">{{ glyph.blurb }}</p>
+        </article>
+      {% endfor %}
+    </div>
+    {% if show_cursor_hero %}
+      <div class="cursor-hero-popup" data-cursor-hero hidden>
+        <div class="cursor-hero-popup__inner">
+          <h2 class="cursor-hero-title">YOU FOUND THE E4st3r 3gg !</h2>
+          <img
+            class="cursor-hero-image"
+            src="{{ url_for('static', filename=cursor_hero_image) }}"
+            alt="Cursor Hero badge"
+          />
+          <p class="cursor-hero-message">
+            Well done, explorer!<br>Not many have your sharp eyes!
+          </p>
+          <button class="pixel-button cursor-hero-close" type="button" data-cursor-hero-close>
+            Continue quest
+          </button>
+        </div>
+      </div>
+    {% endif %}
+  </section>
+{% endblock %}
