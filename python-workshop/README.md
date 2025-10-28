@@ -48,6 +48,17 @@ You may need to hire an <b>Agent</b> for this one!
 </details>
 <br>
 
+### The Caffeinated Artist
+
+Your coffee addiction and artistic soul are telling you that one of the buttons deserves a better color.
+Take a screenshot of one of the buttons, then ask Cursor to change its color to the legendary [Starbucks Green](https://brandpalettes.com/starbucks-coffee-color-codes/) (`#00704A`). The other buttons should keep their original color.
+
+<details>
+<summary>Need a hint?</summary><br>
+You need an artistic <b>Agent</b> for this one!
+</details>
+<br>
+
 ### Trekkie Health Check
 
 The function `get_health_status()` currently returns a hardcoded `OK`. Since our customers are Star Trek fans, we need to follow their Trekkie [odd-even rule](https://screenrant.com/star-trek-movies-odd-number-curse-explained/), they've requested that the status should be `GOOD` when the request happens on an "even" second, and `BAD` when on an "odd" second.

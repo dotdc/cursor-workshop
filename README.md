@@ -2,8 +2,8 @@
 
 ## Description
 
-You're an adventurer and your quest is to improve the `{Gopher|Snake|Typed}` Bookshop! 🚀
-Luckily, you've just discovered the legendary Cursor IDE and unlocked AI magical powers! ✨
+You're an adventurer and your quest is to improve the `{Gopher|Snake|Typed}` Bookshop! 🚀\
+Luckily, you've just discovered the legendary Cursor IDE and unlocked AI magical powers! ✨\
 Hero, grab your keyboard, the code awaits! ⚔️
 
 ## Contributing
