@@ -1,18 +1,14 @@
 # Makefile
 
-SHELL := /bin/bash
-.DEFAULT_GOAL := all
+.PHONY: all venv run
 
-.PHONY: all
 all: venv run
 
-.PHONY: venv
 venv:
-	python -m venv .venv && \
-	source .venv/bin/activate &&\
-	pip install -r requirements.txt
+	python3 -m venv .venv && \
+	. .venv/bin/activate && \
+	pip3 install -r requirements.txt
 
-.PHONY: run
 run:
-	source .venv/bin/activate
-	python app.py
+	. .venv/bin/activate && \
+	python3 app.py

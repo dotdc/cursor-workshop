@@ -4,33 +4,27 @@ Welcome to the "Snake Bookshop", the Python variant of this [Cursor](https://cur
 
 ## Quick start
 
-### Create Virtualenv
-
-```bash
-make venv
-```
-
 ### Run application
 
 ```bash
-make run
+make
 ```
 
 ## Workshop Quests
 
 ### The Frenchy's typo
 
-Users of the Books API don't understand what `rarity` refers to. In fact, our French developer accidentally misused `rarity` instead of `rating`. Please fix that using the most time-efficient feature of Cursor.
+Users of the Books API don't understand what `rarity` refers to. In fact, our French developer accidentally misused `rarity` instead of `rating`. Please fix that in `app/models.py` using Cursor's [tab](https://cursor.com/docs/tab/overview) autocompletion.
 
 <details>
 <summary>Need a hint?</summary><br>
-Maybe replace it first in the Book class, then see if <b>tab</b> completion does the rest!
+Maybe replace it first in the Book class (line 15), then see if <b>tab</b> completion does the rest!
 </details>
 <br>
 
 ### The Eternal Year Problem
 
-The year in the footer is hardcoded to `2025`. As 2026 is around the corner, and since we don't want to change it manually every year, see if Cursor can help display the current year automatically.
+The year in the footer is hardcoded to `2025` in `app/templates/base.html`. As 2026 is around the corner, and since we don't want to change it manually every year, see if Cursor can help display the current year automatically.
 
 <details>
 <summary>Need a hint?</summary><br>
@@ -40,11 +34,12 @@ You could either <b>Ask</b> it directly, or call an <b>Agent</b>!
 
 ### The Missing Search Feature
 
-The search feature on the Books page was never developed by our lazy French developer. Try to add it using Cursor.
+The search feature on the Books page was never developed by our lazy French developer.<br>
+Can you add it?
 
 <details>
 <summary>Need a hint?</summary><br>
-You may need to hire an <b>Agent</b> for this one!
+Copy paste the instruction to your Cursor <b>Agent</b>!
 </details>
 <br>
 
@@ -59,16 +54,6 @@ You need an artistic <b>Agent</b> for this one!
 </details>
 <br>
 
-### Trekkie Health Check
-
-The function `get_health_status()` currently returns a hardcoded `OK`. Since our customers are Star Trek fans, we need to follow their Trekkie [odd-even rule](https://screenrant.com/star-trek-movies-odd-number-curse-explained/), they've requested that the status should be `GOOD` when the request happens on an "even" second, and `BAD` when on an "odd" second.
-
-<details>
-<summary>Need a hint?</summary><br>
-Good luck with these weirdos!
-</details>
-<br>
-
 ### The Hidden Easter Egg
 
 We suspect the original developer hid an easter egg in the Snake Bookshop instead of working on the search feature. See if Cursor can help you uncover it!
@@ -76,6 +61,16 @@ We suspect the original developer hid an easter egg in the Snake Bookshop instea
 <details>
 <summary>Need a hint?</summary><br>
 Just <b>Ask</b>...
+</details>
+<br>
+
+### Trekkie Health Check
+
+The function `get_health_status()` in `app/services.py` currently returns a hardcoded `OK`. Since our customers are Star Trek fans, we need to follow their Trekkie [odd-even rule](https://screenrant.com/star-trek-movies-odd-number-curse-explained/), they've requested that the status should be `GOOD` when the request happens on an "even" second, and `BAD` when on an "odd" second.
+
+<details>
+<summary>Need a hint?</summary><br>
+Good luck with these weirdos!
 </details>
 <br>
 

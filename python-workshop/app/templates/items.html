@@ -20,7 +20,7 @@
         >
           <img src="{{ url_for('static', filename=glyph.icon) }}" alt="Cursor glyph for {{ glyph.title }}" />
           <h3>{{ glyph.title }}</h3>
-          <p class="book-meta">{{ glyph.collection }} · {{ format_rarity(glyph.rarity) }}</p>
+          <p class="book-meta">{{ glyph.collection }} · {{ glyph.rarity if glyph.rarity is defined else format_rarity(glyph.rating) }}</p>
           <p class="book-blurb">{{ glyph.blurb }}</p>
         </article>
       {% endfor %}
