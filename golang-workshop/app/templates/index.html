@@ -1,0 +1,24 @@
+{{define "index"}}
+{{template "base" .}}
+{{end}}
+
+{{define "title"}}Gopher Bookshop{{end}}
+
+{{define "content"}}
+  <section class="pixel-panel">
+    <div class="snake-banner">
+      <div class="banner-copy">
+        <h2>Welcome to the Gopher Bookshop!</h2>
+        <p>
+          You're a bold entrepreneur ready to outclass Amazon.com with the Gopher Bookshop! 🚀<br>
+          Luckily, you've just discovered the legendary <a href="https://cursor.com">Cursor IDE</a> and unlocked AI magical powers! ✨<br>
+          Hero, grab your keyboard, the code awaits! ⚔️
+        </p>
+        <h2>Workshop Quests</h2>
+        <div class="quest-log">
+          {{.WorkshopGoalsHTML}}
+        </div>
+      </div>
+    </div>
+  </section>
+{{end}}
