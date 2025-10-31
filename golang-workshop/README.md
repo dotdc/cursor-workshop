@@ -106,3 +106,7 @@ Gods don't need any hints!
 ---
 
 Hope you've learned something new and had fun during this [Cursor](https://cursor.com) workshop! 🎉
+
+## Credits
+
+- Gopher logo (static/img/gopher-logo.png) sourced from Pixilart: <https://www.pixilart.com/photo/pixel-gopher-e12f7b080c61303>

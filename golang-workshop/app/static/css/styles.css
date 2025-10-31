@@ -6,7 +6,7 @@
   --accent-color: #00add8;
   --accent-shadow: #00add8;
   --secondary-accent: #2563eb;
-  --secondary-shadow: #153e91;
+  --secondary-shadow: #003f7d;
   --grid-gap: 1.5rem;
   --pixel-font: "Courier New", "Lucida Console", monospace;
 }
@@ -19,7 +19,7 @@
   --accent-color: #5DC9E2;
   --accent-shadow: #00add8;
   --secondary-accent: #60a5fa;
-  --secondary-shadow: #1d4ed8;
+  --secondary-shadow: #003f7d;
 }
 
 * {
@@ -115,6 +115,10 @@ code {
   color: rgba(248, 250, 252, 0.85);
 }
 
+.quest-log details {
+  margin-bottom: 7px;
+}
+
 .nav-bar {
   background-color: rgba(7, 18, 36, 0.92);
   border-bottom: 4px solid var(--panel-border);
@@ -175,7 +179,7 @@ code {
 
 .nav-logo img {
   display: block;
-  width: 60px;
+  width: 64px;
   height: auto;
   image-rendering: pixelated;
 }
@@ -391,7 +395,7 @@ code {
 }
 
 .footer a {
-  color: #00add8;
+  color: #facc15;
   text-decoration: none;
   font-weight: 700;
   text-shadow: 0 2px 0 #000000;

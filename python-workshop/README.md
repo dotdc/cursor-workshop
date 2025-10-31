@@ -106,3 +106,7 @@ Gods don't need any hints!
 ---
 
 Hope you've learned something new and had fun during this [Cursor](https://cursor.com) workshop! 🎉
+
+## Credits
+
+- Python logo (static/img/python-logo.png) sourced from the [Codedex](https://www.codedex.io) editor: <https://www.codedex.io/images/editor/python-logo.png>
