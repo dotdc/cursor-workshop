@@ -18,3 +18,12 @@ __pycache__/
 *$py.class
 .venv/
 .ruff_cache/
+
+# Node/TypeScript
+node_modules/
+dist/
+*.tsbuildinfo
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+pnpm-debug.log*

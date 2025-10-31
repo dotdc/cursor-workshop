@@ -1,0 +1,53 @@
+{% extends "base.njk" %}
+
+{% block title %}Typed Bookshop - Books{% endblock %}
+
+{% block content %}
+  <section class="pixel-panel">
+    <header class="snake-banner" style="margin-bottom: 2rem;">
+      <div class="banner-copy">
+        <h1>Books</h1>
+        <p>
+          Every volume ships with a matching operating cursor emblem. The search bar is currently ornamental—bring it to life when you tackle the enhancement quest.
+        </p>
+      </div>
+    </header>
+    <div class="search-panel">
+      <input type="search" placeholder="Type to filter (coming soon)" disabled />
+      <button class="pixel-button" type="button" disabled>Search</button>
+    </div>
+    <div class="book-grid">
+      {% for book in books %}
+        <article
+          class="book-card"
+          style="border-color: {{ book.accent }}; box-shadow: 6px 6px 0 0 {{ book.accentDark }};"
+        >
+          <img src="/static/{{ book.icon }}" alt="Cursor glyph for {{ book.title }}" />
+          <h3>{{ book.title }}</h3>
+          <p class="book-meta">
+            {{ book.collection }} · {% if book.rarity %}{{ book.rarity }}{% else %}{{ formatRarity(book.rating) }}{% endif %}
+          </p>
+          <p class="book-blurb">{{ book.blurb }}</p>
+        </article>
+      {% endfor %}
+    </div>
+    {% if showCursorHero %}
+      <div class="cursor-hero-popup" data-cursor-hero hidden>
+        <div class="cursor-hero-popup__inner">
+          <h2 class="cursor-hero-title">YOU FOUND THE E4st3r 3gg !</h2>
+          <img
+            class="cursor-hero-image"
+            src="/static/{{ cursorHeroImage }}"
+            alt="Cursor Hero badge"
+          />
+          <p class="cursor-hero-message">
+            Well done, explorer!<br />Not many have your sharp eyes!
+          </p>
+          <button class="pixel-button cursor-hero-close" type="button" data-cursor-hero-close>
+            Continue quest
+          </button>
+        </div>
+      </div>
+    {% endif %}
+  </section>
+{% endblock %}

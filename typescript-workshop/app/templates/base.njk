@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" class="theme-night">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}Typed Bookshop{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <header class="nav-bar">
+      <div class="container nav-inner">
+        <div class="nav-left">
+          <a href="/" class="nav-title">
+            <span class="nav-logo">
+              <img src="/static/img/typed-logo.png" alt="Typed Bookshop logo" />
+            </span>
+            <span class="nav-name">Typed Bookshop</span>
+          </a>
+        </div>
+        <div class="nav-right">
+          <div class="nav-actions">
+            <a href="/" class="pixel-button">HOME</a>
+            <a href="/books" class="pixel-button">Books Page</a>
+            <a href="/api/books" class="pixel-button">Books API</a>
+            <a href="/api/healthz" class="pixel-button">Health API</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      {% block content %}{% endblock %}
+    </main>
+    <footer class="footer">
+      <span>✶</span> Created by <a href="https://github.com/dotdc">David Calvert</a> for your Cursor adventures <span>✶</span><br /><br />
+      &copy; 2025 Typed Bookshop
+    </footer>
+    <script src="/static/js/app.js" defer></script>
+  </body>
+</html>
