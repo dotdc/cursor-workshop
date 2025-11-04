@@ -105,7 +105,7 @@ Gods don't need any hints!
 
 ---
 
-Hope you've learned something new and had fun during this [Cursor](https://cursor.com) workshop! 🎉
+Hope you will learn something new and have fun during this [Cursor](https://cursor.com) workshop! 🎉
 
 ## Credits
 
