@@ -1,4 +1,4 @@
-# Cursor Workshop
+# cursor-workshop
 
 ![cursor-workshop-banner](https://raw.githubusercontent.com/dotdc/media/main/cursor-workshop/cursor-workshop-banner.png)
 

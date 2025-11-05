@@ -4,6 +4,23 @@ Welcome to the "Typed Bookshop", the TypeScript variant of this [Cursor](https:/
 
 ## Quick start
 
+### Prerequisites
+
+Make sure you have **Node.js**, **Make**, and **Cursor** installed on your computer.
+
+**Install Cursor:**
+
+- <https://cursor.com/download>
+
+**Install Node.js and Make:**
+
+| OS | Installation command |
+| --- | --- |
+| Ubuntu | `sudo apt install -y nodejs npm make` |
+| Fedora | `sudo dnf install -y nodejs npm make` |
+| Arch Linux | `sudo pacman -Sy nodejs npm make` |
+| MacOS | `brew install node make` |
+
 ### Run application
 
 ```bash
@@ -19,6 +36,16 @@ Users of the Books API don't understand what `rarity` refers to. In fact, our Fr
 <details>
 <summary>Need a hint?</summary><br>
 Maybe replace it first in the Book interface (line 3), then see if <b>tab</b> completion does the rest!
+</details>
+<br>
+
+### From Shakespeare to Molière
+
+The `.cursor/rules/pirate.mdc` file forces Cursor to answer like a pirate. While you enjoy the Monkey Island vibe, you would prefer that Cursor respond in French to sharpen your French skills. Ask Cursor to update the rule so replies default to French unless `SHAKESPEARE` is present in the prompt, allowing your British colleague to bypass it.
+
+<details>
+<summary>Need a hint?</summary><br>
+Use Cursor <b>Agent</b> mode to rewrite the rule so it responds in French, but do not forget the SHAKESPEARE bypass for your British colleague!
 </details>
 <br>
 
