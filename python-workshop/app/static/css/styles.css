@@ -109,10 +109,41 @@ code {
 }
 
 .banner-copy p {
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
   line-height: 1.6;
   font-size: 1rem;
   color: rgba(248, 250, 252, 0.85);
+}
+
+.warning-callout {
+  border: 1px solid rgba(250, 204, 21, 0.4);
+  border-left-width: 6px;
+  border-left-color: #d29922;
+  background: rgba(250, 204, 21, 0.08);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
+  margin: 1rem 0;
+}
+
+.warning-callout__title {
+  margin: 0 0 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #facc15;
+}
+
+.warning-callout p {
+  margin: 0;
+  line-height: 1.5;
+  color: rgba(248, 250, 252, 0.9);
+}
+
+.warning-callout code {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fcd34d;
 }
 
 .nav-bar {

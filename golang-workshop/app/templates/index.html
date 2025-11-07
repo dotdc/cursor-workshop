@@ -12,8 +12,14 @@
         <p>
           You're a bold entrepreneur ready to outclass Amazon.com with the Gopher Bookshop! 🚀<br>
           Luckily, you've just discovered the legendary <a href="https://cursor.com">Cursor IDE</a> and unlocked AI magical powers! ✨<br>
-          Hero, grab your keyboard, the code awaits! ⚔️
-        </p>
+          Hero, grab your keyboard, the code awaits! ⚔️</p>
+        <div class="warning-callout" role="alert">
+          <p class="warning-callout__title">Important</p>
+          <p>
+            Before starting the workshop, delete the other
+            <code>*-workshop/</code> folders (or add a Cursor rule that ignores them) so Cursor's LLM context stays focused on the Go version.
+          </p>
+        </div>
         <h2>Workshop Quests</h2>
         <div class="quest-log">
           {{.WorkshopGoalsHTML}}

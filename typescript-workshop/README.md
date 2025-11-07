@@ -27,6 +27,9 @@ Make sure you have **Node.js**, **Make**, and **Cursor** installed on your compu
 make
 ```
 
+> [!IMPORTANT]
+> Before starting the workshop, delete the other `*-workshop/` folders (or add a Cursor rule that ignores them) so Cursor's LLM context stays focused on the TypeScript version.
+
 ## Workshop Quests
 
 ### The Frenchy's typo

@@ -27,6 +27,9 @@ Make sure you have **Python**, **Make**, and **Cursor** installed on your comput
 make
 ```
 
+> [!IMPORTANT]
+> Before starting the workshop, delete the other `*-workshop/` folders (or add a Cursor rule that ignores them) so Cursor's LLM context stays focused on the Python version.
+
 ## Workshop Quests
 
 ### The Frenchy's typo
